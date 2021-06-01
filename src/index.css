@@ -1,13 +1,91 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1000px;
+  min-height: 100vh;
+}
+
+.start {
+  width: 1000px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start_btn {
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.dashboard_title {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+
+.dashboard_btn_line {
+  display: flex;
+  justify-content: center;
+}
+
+.dashboard_btn_line > button {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  border-radius: 5px;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: zoomin;
+}
+
+@keyframes zoomin {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.pascal_triangle {
+  margin-top: 30px;
+}
+
+.close_btn {
+  width: 150px;
+  height: 30px;
+}
+
+.triangle_btn {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+}
+
+.pascal_triangle_info {
+  position: fixed;
+  top: 40px;
+  left: 600px;
 }
